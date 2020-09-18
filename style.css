@@ -1,0 +1,58 @@
+body {
+  background-image: linear-gradient(#615dad, #ffc8da);
+  margin-top: 30px;
+}
+
+.titulka {
+  font-family: 'Roboto', sans-serif;
+  width: 350px;
+  text-align: center;
+  line-height: 1.5;
+  background-color: #283e50;
+  color: #ffffff;
+  margin: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+h1 {
+  font-family: 'Lobster', sans-serif;
+  font-size: 40px;
+  margin: 0;
+  padding: 10px;
+}
+
+p {
+  padding: 0 10px 10px 10px;
+}
+
+img {
+  width: 350px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  color: #ffffff;
+}
+
+.hrat {
+  background-color: #0197f6;
+}
+
+.hrat:hover,
+.hrat:focus {
+  background-color: #0090e9;
+}
+
+.pravidla {
+  background-color: #1fcca4;
+}
+
+.pravidla:hover,
+.pravidla:focus {
+  background-color: #1cbb96;
+}
