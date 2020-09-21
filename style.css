@@ -43,6 +43,7 @@ a {
 
 .hrat {
   background-color: #0197f6;
+  border-top: 1px solid #283e50;
 }
 
 .hrat:hover,
