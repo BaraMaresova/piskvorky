@@ -39,21 +39,21 @@ a {
   color: #ffffff;
 }
 
-.hrat {
+.hratbtn {
   background-color: #0197f6;
   border-top: 1px solid #283e50;
 }
 
-.hrat:hover,
-.hrat:focus {
+.hratbtn:hover,
+.hratbtn:focus {
   background-color: #0090e9;
 }
 
-.pravidla {
+.pravidlabtn {
   background-color: #1fcca4;
 }
 
-.pravidla:hover,
-.pravidla:focus {
+.pravidlabtn:hover,
+.pravidlabtn:focus {
   background-color: #1cbb96;
 }
