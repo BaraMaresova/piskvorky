@@ -5,10 +5,10 @@ body {
   height: 100vh;
 }
 
-.titulka, .pravidla {
+.titulka,
+.pravidla {
   font-family: 'Roboto', sans-serif;
   width: 350px;
-  text-align: center;
   line-height: 1.5;
   background-color: #283e50;
   color: #ffffff;
@@ -16,11 +16,24 @@ body {
   border-radius: 15px 15px 0 0;
 }
 
+.titulka {
+  text-align: center;
+}
+
+.pravidla {
+  text-align: left;
+}
+
+.pravidla li {
+  padding: 5px 15px;
+}
+
 h1 {
   font-family: 'Lobster', sans-serif;
   font-size: 40px;
   margin: 0;
   padding: 10px;
+  text-align: center;
 }
 
 p {
@@ -49,7 +62,8 @@ a {
   background-color: #0090e9;
 }
 
-.pravidlabtn, .uvodnibtn {
+.pravidlabtn,
+.uvodnibtn {
   background-color: #1fcca4;
 }
 
@@ -62,8 +76,21 @@ a {
 
 /* Část pravidla */
 
-.kolecko, .krizek {
+.kolecko,
+.krizek {
   width: 1em;
   height: 1em;
   filter: invert(100%);
+}
+
+.situace {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.situace figure {
+  flex: 0 0 70%;
 }
