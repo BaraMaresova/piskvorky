@@ -22,21 +22,7 @@ body {
 
 .pravidla {
   text-align: left;
-  padding: 0px;
   min-width: 270px;
-}
-
-.pravidla li {
-  padding: 5px;
-}
-
-.pravidla h1 {
-  padding-top: 20px;
-}
-
-ol.pravidlaList {
-  padding: 0 20px 0 40px;
-  margin: 10px 0 10px 0;
 }
 
 h1 {
@@ -87,7 +73,19 @@ a {
   background-color: #1cbb96;
 }
 
-/* Část pravidla */
+/* Pouze část pravidla: */
+
+.pravidla li {
+  padding: 5px;
+}
+
+.pravidla h1 {
+  padding-top: 20px;
+}
+
+ol.pravidlaList {
+  padding: 0px 25px 10px 40px;
+}
 
 .kolecko,
 .krizek {
@@ -95,17 +93,8 @@ a {
   height: 1em;
   filter: invert(100%);
 }
-
-.situace {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
 figure {
-  flex: 0 0 70%;
+  margin: 16px 30px;
 }
 
 .pravidla .situaceImg {
@@ -117,9 +106,9 @@ figure {
   font-style: italic;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 570px) {
   .pravidla {
-    min-width: 600px;
+    min-width: 500px;
     max-width: 800px;
   }
 
@@ -128,7 +117,7 @@ figure {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    margin: 0;
+    margin: 0 0 40px 0;
     padding: 0;
   }
 
@@ -136,25 +125,15 @@ figure {
     flex: 0 0 45%;
     margin: 10px;
   }
-  }
 
-  @media (min-width: 1400px) {
-    .pravidla {
-      min-width: 700px;
-      max-width: 1000px;
-    }
-  
-    .situace {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: center;
-      margin: 0;
-      padding: 0;
-    }
-  
-    figure {
-      flex: 0 0 45%;
-      margin: 10px;
-    }
+  ol.pravidlaList {
+    padding: 0px 40px 20px 50px;
   }
+}
+
+@media (min-width: 1400px) {
+  .pravidla {
+    min-width: 700px;
+    max-width: 1000px;
+  }
+}
