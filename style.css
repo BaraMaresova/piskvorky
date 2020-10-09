@@ -137,3 +137,64 @@ figure {
     max-width: 1000px;
   }
 }
+
+/* Pouze část hra */
+
+.hraObsah{
+  max-width: 80vmin;
+  color:white;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.hrajeTlacitka{
+  display:flex;
+  flex-wrap:nowrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 3.5em;
+  margin: 10px;
+}
+
+.hraObsah p{
+order: -1;
+font-size: 16px;
+}
+
+.hraBtns{
+  display:flex;
+  flex-wrap: nowrap;
+}
+
+.restart{
+  margin: 5px;
+  border-radius: 5px;
+}
+
+a.restart.hratbtn{
+  padding:8px;
+}
+
+a.home.uvodnibtn{
+  padding:8px;
+}
+
+.home{
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.hraciPole{
+  display:flex;
+  flex-wrap:wrap;
+  width: 100%;
+}
+
+.hraTlacitko{
+  flex:0 0 10%;
+  padding:1px;
+  width: 30px;
+  height: 30px;
+}
