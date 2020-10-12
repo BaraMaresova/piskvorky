@@ -193,8 +193,14 @@ a.home.uvodnibtn{
 }
 
 .hraTlacitko{
-  flex:0 0 10%;
-  padding:1px;
-  width: 30px;
-  height: 30px;
+  margin:0;
+  padding: 0;
+  flex:1 1 10%;
+  height:8vmin;
+  opacity: 0.6;
+  border: 0.5px solid black;
+}
+
+.hraTlacitko:hover{
+  opacity: 0.8;
 }
