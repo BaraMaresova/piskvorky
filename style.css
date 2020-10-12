@@ -197,6 +197,7 @@ a.home.uvodnibtn{
   padding: 0;
   flex:1 1 10%;
   height:8vmin;
+  background-color: whitesmoke;
   opacity: 0.6;
   border: 0.5px solid black;
 }
