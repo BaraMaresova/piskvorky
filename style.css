@@ -140,68 +140,57 @@ figure {
 
 /* Pouze část hra */
 
-.hraObsah{
+.hraObsah {
   max-width: 80vmin;
-  color:white;
-  margin:auto;
+  color: white;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
-.hrajeTlacitka{
-  display:flex;
-  flex-wrap:nowrap;
+.hrajeTlacitka {
+  display: flex;
   justify-content: space-between;
   width: 100%;
   height: 3.5em;
-  margin: 10px;
+  margin: 10px 0;
 }
 
-.hraObsah p{
-order: -1;
-font-size: 16px;
+.hraObsah p {
+  order: -1;
+  font-size: 16px;
 }
 
-.hraBtns{
-  display:flex;
+.hraBtns {
+  display: flex;
   flex-wrap: nowrap;
 }
 
-.restart{
+a.restart.hratbtn, a.home.uvodnibtn {
+  padding: 8px;
+}
+
+.home, .restart{
   margin: 5px;
   border-radius: 5px;
 }
 
-a.restart.hratbtn{
-  padding:8px;
-}
-
-a.home.uvodnibtn{
-  padding:8px;
-}
-
-.home{
-  margin: 5px;
-  border-radius: 5px;
-}
-
-.hraciPole{
-  display:flex;
-  flex-wrap:wrap;
+.hraciPole {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
-.hraTlacitko{
-  margin:0;
+.hraTlacitko {
+  margin: 0;
   padding: 0;
-  flex:1 1 10%;
-  height:8vmin;
+  flex: 1 1 10%;
+  height: 8vmin;
   background-color: whitesmoke;
   opacity: 0.6;
   border: 0.5px solid black;
 }
 
-.hraTlacitko:hover{
+.hraTlacitko:hover {
   opacity: 0.8;
 }
