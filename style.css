@@ -194,3 +194,19 @@ a.restart.hratbtn, a.home.uvodnibtn {
 .hraTlacitko:hover {
   opacity: 0.8;
 }
+
+/* třídy pro JS */
+
+.hraciPole--kolecko{
+  background-image: url(obrazky/circle.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70%;
+}
+
+.hraciPole--krizek{
+  background-image: url(obrazky/cross.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70%;
+}
