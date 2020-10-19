@@ -3,9 +3,9 @@ console.log('všechno dobrý');
 
 let player = 'kolecko';
 
-const hraTlacitka = document.querySelectorAll('.hraTlacitko');
+const hraTlacitko = document.querySelector('.hraTlacitko');
 
-hraTlacitka.addEventListener('click', () => {
+const hra = () => {
   if (player === 'kolecko') {
     document.querySelector('.hraTlacitko').classList.add('hraciPole--kolecko');
     document.querySelector(
@@ -19,4 +19,9 @@ hraTlacitka.addEventListener('click', () => {
     ).innerHTML = `<h3>HRAJE: </h3> <img src="obrazky/cross.svg alt="obrázek křížku">`;
     player = 'kolecko';
   } else null;
-});
+};
+
+const hraciPole = document.querySelectorAll('.hraTlacitko');
+for (let i = 0; i < hraciPole.length; i += 1) {
+  hraciPole[i].addEventListener('click', hra);
+}
