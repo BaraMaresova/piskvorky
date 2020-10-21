@@ -214,12 +214,23 @@ a.home.uvodnibtn {
   background-image: url(obrazky/circle.svg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 60%;
+  background-size: 70%;
+  animation: zoom 0.1s ease-in;
 }
 
 .hraciPole--krizek {
   background-image: url(obrazky/cross.svg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 60%;
+  background-size: 70%;
+  animation: zoom 0.15s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(1);
+  }
 }
