@@ -163,14 +163,15 @@ figure {
 
 .hraBtns {
   display: flex;
-  flex-wrap: nowrap;
 }
 
-a.restart.hratbtn, a.home.uvodnibtn {
+a.restart.hratbtn,
+a.home.uvodnibtn {
   padding: 8px;
 }
 
-.home, .restart{
+.home,
+.restart {
   margin: 5px;
   border-radius: 5px;
 }
@@ -195,18 +196,30 @@ a.restart.hratbtn, a.home.uvodnibtn {
   opacity: 0.8;
 }
 
+.player-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: -1;
+}
+
+.activePlayer {
+  padding: 7px;
+  filter: invert(1);
+}
+
 /* třídy pro JS */
 
-.hraciPole--kolecko{
+.hraciPole--kolecko {
   background-image: url(obrazky/circle.svg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 70%;
+  background-size: 60%;
 }
 
-.hraciPole--krizek{
+.hraciPole--krizek {
   background-image: url(obrazky/cross.svg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 70%;
+  background-size: 60%;
 }

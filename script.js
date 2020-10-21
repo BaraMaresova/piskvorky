@@ -2,21 +2,23 @@
 console.log('všechno dobrý');
 
 let player = 'kolecko';
-
 const hraTlacitko = document.querySelector('.hraTlacitko');
+const activePlayer = document.querySelector('.activePlayer');
 
-const hra = () => {
+const hra = (event) => {
   if (player === 'kolecko') {
-    document.querySelector('.hraTlacitko').classList.add('hraciPole--kolecko');
-    document.querySelector(
-      '.hraje',
-    ).innerHTML = `<h3>HRAJE: </h3> <img src="obrazky/circle.svg alt="obrázek kolečka">`;
+    event.target.classList.add('hraciPole--kolecko');
+    event.target.disabled = true;
+
+    activePlayer.src = 'obrazky/cross.svg';
+    activePlayer.alt = 'Obrázek křížku';
     player = 'krizek';
   } else if (player === 'krizek') {
-    document.querySelector('.hraTlacitko').classList.add('hraciPole--krizek');
-    document.querySelector(
-      '.hraje',
-    ).innerHTML = `<h3>HRAJE: </h3> <img src="obrazky/cross.svg alt="obrázek křížku">`;
+    event.target.classList.add('hraciPole--krizek');
+    event.target.disabled = true;
+
+    activePlayer.src = 'obrazky/circle.svg';
+    activePlayer.alt = 'Obrázek kolečka';
     player = 'kolecko';
   } else null;
 };
