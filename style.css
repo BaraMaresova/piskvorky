@@ -180,6 +180,8 @@ a.home.uvodnibtn {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  background-color: whitesmoke;
+  opacity: 0.6;
 }
 
 .hraTlacitko {
@@ -187,8 +189,6 @@ a.home.uvodnibtn {
   padding: 0;
   flex: 1 1 10%;
   height: 8vmin;
-  background-color: whitesmoke;
-  opacity: 0.6;
   border: 0.5px solid black;
 }
 
@@ -210,18 +210,18 @@ a.home.uvodnibtn {
 
 /* třídy pro JS */
 
-.hraciPole--kolecko {
+.hraciPole--kolecko{
   background-image: url(obrazky/circle.svg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: 70%;
-  animation: zoom 0.1s ease-in;
+  animation: zoom 0.15s ease-in;
 }
 
-.hraciPole--krizek {
+.hraciPole--krizek{
   background-image: url(obrazky/cross.svg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: 70%;
   animation: zoom 0.15s;
 }

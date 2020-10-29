@@ -27,3 +27,4 @@ const hraciPole = document.querySelectorAll('.hraTlacitko');
 for (let i = 0; i < hraciPole.length; i += 1) {
   hraciPole[i].addEventListener('click', hra);
 }
+
