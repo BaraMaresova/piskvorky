@@ -114,11 +114,11 @@ const vitezstvi = (pole) => {
         'Gratulujeme kolečku k vítězství! Chcete rozdrtit křížek ještě jednou?',
       );
       location.reload();
+    } else if (getSymbol(pole) === 'cross') {
+      window.confirm(
+        'Gratulujeme křížku k vítězství! Chcete rozdrtit kolečko ještě jednou?',
+      );
+      location.reload();
     }
-  } else if (getSymbol(pole) === 'cross') {
-    window.confirm(
-      'Gratulujeme křížku k vítězství! Chcete rozdrtit kolečko ještě jednou?',
-    );
-    location.reload();
   }
 };
